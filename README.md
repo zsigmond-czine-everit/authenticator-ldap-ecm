@@ -13,6 +13,7 @@ implements the authentication against the configured LDAP server.
  - **Service Description**: The description of this component configuration. 
  It is used to easily identify the services registered by this component. 
  (service.description)
+ - **SSL enabled**: Use SSL during LDAP communication. (sslEnabled)
  - **LDAP URL**: The LDAP URL to connect to. (e.g. 
  ldap://<ldapDirectoryHostname>:<port>, ldap://localhost:10389) (url)
  - **System User DN**: The DN of the system user used to search for other 
@@ -28,8 +29,6 @@ implements the authentication against the configured LDAP server.
  authentication succeeds. Must contain exactly one substitution token '{0}' 
  that will be replaced by the CN of the authenticated user. (e.g. 
  cn={0},ou=people,o=sevenSeas) (userDnTemplate)
- - **LogService OSGi filter**: OSGi Service filter expression for LogService 
- instance. (logService.target)
 
 #Concept
 Full authentication concept is available on blog post 
